@@ -165,7 +165,10 @@
             Controls.Add(ProcessNameHeaderLabel);
             Controls.Add(GameNameLabel);
             Controls.Add(HeaderLabel);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "GameInfoForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "GameInfoForm";
             Load += GameInfoForm_Load;
             ResumeLayout(false);

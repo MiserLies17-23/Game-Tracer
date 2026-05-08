@@ -17,3 +17,4 @@ C:\Users\THUNDEROBOT\source\repos\WinFormsApp_GameTracker\WinFormsApp_GameTracke
 C:\Users\THUNDEROBOT\source\repos\WinFormsApp_GameTracker\WinFormsApp_GameTracker\obj\Debug\net8.0-windows\Interop.IWshRuntimeLibrary.dll
 C:\Users\THUNDEROBOT\source\repos\WinFormsApp_GameTracker\WinFormsApp_GameTracker\obj\Debug\net8.0-windows\WinFormsApp_GameTracker.csproj.ResolveComReference.cache
 C:\Users\THUNDEROBOT\source\repos\WinFormsApp_GameTracker\WinFormsApp_GameTracker\obj\Debug\net8.0-windows\WinFormsApp_GameTracker.GameInfoForm.resources
+C:\Users\THUNDEROBOT\source\repos\WinFormsApp_GameTracker\WinFormsApp_GameTracker\obj\Debug\net8.0-windows\WinFormsApp_GameTracker.sourcelink.json

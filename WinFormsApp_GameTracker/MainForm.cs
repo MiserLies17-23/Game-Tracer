@@ -23,13 +23,13 @@ namespace WinFormsApp_GameTracker
             }
         }
 
-        
+
         private void GamesDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
                 if (e.RowIndex < 0 || e.ColumnIndex < 0) return;
-                
+
                 var gameName = (string)GamesDataGridView.Rows[e.RowIndex].Cells[0].Value;
                 if (e.RowIndex >= 0 && e.ColumnIndex == 3)
                 {
@@ -41,7 +41,7 @@ namespace WinFormsApp_GameTracker
                     var gameInfo = _dataManager.GetGameInfo(gameName);
                     var gameStats = _dataManager.GetGameStats(gameName);
                     var gameInfoForm = new GameInfoForm(gameInfo!, gameStats!);
-                    
+
                     gameInfoForm.ShowDialog();
                 }
             }
@@ -73,7 +73,7 @@ namespace WinFormsApp_GameTracker
                     };
 
                     using Process? process = Process.Start(startInfo);
-                    process!.WaitForExit(); 
+                    process!.WaitForExit();
                 });
                 stopwatch.Stop();
 
@@ -101,6 +101,11 @@ namespace WinFormsApp_GameTracker
                 GamesDataGridView.Rows[rowIndex].Cells[3].Value = "Запустить";
                 GamesDataGridView.Rows[rowIndex].Cells[4].Value = "Статистика";
             }
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
