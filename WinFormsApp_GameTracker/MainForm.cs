@@ -2,15 +2,29 @@ using System.Diagnostics;
 
 namespace WinFormsApp_GameTracker
 {
+    /// <summary>
+    /// Класс, представляющий глувную форму приложения.
+    /// Отображает найденные игры, позволяет запустить и посмотреть статистику игры
+    /// </summary>
     public partial class MainForm : Form
     {
+        /// <summary> Экземпляр DataManager для реализации взаимодействия с игрой </summary>
         private readonly DataManager _dataManager;
+        
+        /// <summary>
+        /// Конструктор по умолчанию
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();
             _dataManager = new DataManager();
         }
 
+        /// <summary>
+        /// Обработчик загрузки формы
+        /// </summary>
+        /// <param name="sender"> Объект-отправитель (форма) </param>
+        /// <param name="e"> Аргументы события </param>
         private void MainForm_Load(object sender, EventArgs e)
         {
             try
@@ -23,7 +37,11 @@ namespace WinFormsApp_GameTracker
             }
         }
 
-
+        /// <summary>
+        /// Обработчик событий для кнопок таблицы
+        /// </summary>
+        /// <param name="sender"> Объект отправитель (кнопка ячейки) </param>
+        /// <param name="e"> Аргументы событий ячеек таблицы </param>
         private void GamesDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -51,6 +69,11 @@ namespace WinFormsApp_GameTracker
             }
         }
 
+        /// <summary>
+        /// Асинхронный метод запуска игр
+        /// </summary>
+        /// <param name="executablePath"> Путь исполняемого файла </param>
+        /// <param name="gameName"> Название игры </param>
         private async void LaunchGame(string executablePath, string gameName)
         {
             try
@@ -87,6 +110,9 @@ namespace WinFormsApp_GameTracker
             }
         }
 
+        /// <summary>
+        /// Метод загрузки игр в таблицу
+        /// </summary>
         private void LoadAllGames()
         {
             var games = _dataManager.GetAllGames();
@@ -103,6 +129,11 @@ namespace WinFormsApp_GameTracker
             }
         }
 
+        /// <summary>
+        /// Обработчик событий для кнопки "Выход"
+        /// </summary>
+        /// <param name="sender"> Объект-отправитель (кнопка) </param>
+        /// <param name="e"> Аргументы событий </param>
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsApp_GameTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34698757de6649638643b0999802b1851b1af093")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b201380b7e9e81753f00e97b10a6c478caad934")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsApp_GameTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsApp_GameTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
